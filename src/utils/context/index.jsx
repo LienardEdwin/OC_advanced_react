@@ -1,6 +1,6 @@
 import React, { useState, createContext } from 'react'
 
-export const ThemeContext = createContext('')
+export const ThemeContext = createContext()
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light')
@@ -15,7 +15,7 @@ export const ThemeProvider = ({ children }) => {
   )
 }
 
-export const SurveyContext = createContext('')
+export const SurveyContext = createContext()
 
 export const SurveyProvider = ({ children }) => {
   const [answers, setAnswers] = useState({})

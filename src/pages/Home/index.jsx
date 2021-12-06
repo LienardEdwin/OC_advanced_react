@@ -12,7 +12,7 @@ const HomeWrapper = styled.div`
 const HomerContainer = styled.div`
   margin: 30px;
   background-color: ${({ theme }) =>
-    theme === 'light' ? colors.backgroundLight : colors.backgroundDark};
+          theme === 'light' ? colors.backgroundLight : colors.backgroundDark};
   padding: 60px 90px;
   display: flex;
   flex-direction: row;
@@ -24,7 +24,6 @@ const LeftCol = styled.div`
   flex-direction: column;
   justify-content: center;
   flex: 1;
-
   ${StyledLink} {
     max-width: 250px;
   }
@@ -52,7 +51,7 @@ function Home() {
             Repérez vos besoins, on s’occupe du reste, avec les meilleurs
             talents
           </StyledTitle>
-          <StyledLink to="/survey/1" $isFullLink>
+          <StyledLink to="/survey/1" $isFullLink test-id="ceci-est-un-test">
             Faire le test
           </StyledLink>
         </LeftCol>
